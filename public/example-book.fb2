@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FictionBook xmlns="http://www.gribuser.ru/xml/fictionbook/2.0" xmlns:l="http://www.w3.org/1999/xlink">
+ <description>
+  <title-info>
+   <genre>adventure</genre>
+   <author><first-name>Тест</first-name><last-name>Авторов</last-name></author>
+   <book-title>Пример книги в формате fb2</book-title>
+   <annotation><p>Короткая книга для проверки загрузки fb2: сайт сам найдёт главы, название и автора.</p></annotation>
+   <lang>ru</lang>
+  </title-info>
+ </description>
+ <body>
+  <title><p>Пример книги в формате fb2</p></title>
+  <section>
+   <title><p>Глава 1. Начало</p></title>
+   <p>Это первый абзац первой главы.</p>
+   <p>Второй абзац со ссылкой на сноску.<a l:href="#n1" type="note">[1]</a></p>
+  </section>
+  <section>
+   <title><p>Глава 2. Продолжение</p></title>
+   <p>Третий абзац уже во второй главе.</p>
+   <empty-line/>
+   <p>Четвёртый абзац.</p>
+  </section>
+  <section>
+   <title><p>3</p></title>
+   <p>В этой главе заголовок состоит из одной цифры, он превратится в «Глава 3».</p>
+  </section>
+ </body>
+ <body name="notes">
+  <section id="n1">
+   <title><p>1</p></title>
+   <p>Это сноска. Она не попадёт в текст книги.</p>
+  </section>
+ </body>
+</FictionBook>
